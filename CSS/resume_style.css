@@ -1,0 +1,627 @@
+.container{
+    font-family: 'Lora', serif;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    margin:auto;
+    height: 100vh;
+    width: 100%;
+}
+html{
+    font-size:62.5%;
+}
+#nav-bar{
+    position: fixed;
+    right:0;
+    width:100%;
+    z-index: 1;
+    background-color: white;
+}
+#nav-bar,#Home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0rem;
+}
+nav{
+    margin:auto 1rem;
+    left:15%;
+}
+nav li{
+    display: inline;
+    font-size: 2rem;
+    padding:1rem;
+    font-weight: bold;
+}
+nav li a{
+    text-decoration: none;
+    color: #4ef037;
+}
+
+nav li a:hover{
+    color:#1a1a1d;
+    border-bottom: .2rem solid #1a1a1d;    
+}
+nav li a.active{
+    color:#1a1a1d;
+    border-bottom: .2rem solid #1a1a1d;    
+}
+.active{
+    color:#1a1a1d;
+    border-bottom: .2rem solid #1a1a1d;    
+}
+#profile-logo{
+    left:0;
+    width:13rem;
+    height: 4rem;
+    margin-left:0.5rem;
+    margin-top:0.8rem;
+}
+#menu-icon{
+    width:6rem;
+    height:5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    right:5rem;
+    top:0;
+    border-radius: .5rem;
+  }
+  .checkbtn{
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display: none;
+  }
+/* style for home */
+#Home{
+    width:100%;
+    height: 50rem;
+}
+#profile-pic{
+    width:40%;
+    height:100%;
+}
+#welcome_quote{
+    width:60%;
+    height:100%;
+    display: flex;
+    align-items: center;    
+}
+#dials{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    
+}
+.home-dial{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#1a1a1d;
+    background-color: white;
+    padding:.1rem;
+    margin:0;
+    
+}
+.home-dial1{
+    font-size: 5.5rem;
+    font-weight:bolder;
+    color:#1a1a1d;
+    margin:.5rem;
+    padding:1rem;
+    /* border:.4rem solid #4ef037 ; */
+    border-radius: .9rem;
+    box-shadow: .1rem .1rem .5rem 0.01rem #4ef037;
+    /* animation: rotate 1s infinite linear; */
+}
+/* @keyframes rotate{    
+    25%{
+        border-top:#4ef037;
+        border-right: transparent;
+        border-bottom:transparent;
+        border-left: transparent;
+        
+    }
+    50%{
+        border-top:transparent;
+        border-right: #4ef037;
+        border-bottom:transparent;
+        border-left: transparent;
+        
+    }
+    75%{
+        border-top:transparent;
+        border-right: transparent;
+        border-bottom:#4ef037;
+        border-left: transparent;
+        
+    }
+    100%{
+        border-top:transparent;
+        border-right: transparent;
+        border-bottom:transparent;
+        border-left: #4ef037;
+        
+    }
+} */
+
+/* style for About */
+
+#About,#Education, #Skills{
+    width:100%;
+    padding-top:2%;
+}
+#Skills{
+    padding-top:3%;
+}
+#aboutContent,#achievement-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#aboutPic{
+    margin:5rem auto;
+    width:40%;
+    height:90%;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem 2rem .15rem #a7ff83;
+}
+.heading{
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top:4rem;
+    margin:0rem;
+}
+.sub-heading{
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    color: #4ef037;    
+    background:white;
+    padding:0 1rem;
+}
+.strike-line{
+    width: 20rem; 
+    text-align: center; 
+    border-bottom: .2rem solid #000; 
+    line-height: 0.1em;
+    margin: auto; 
+    margin-top:1rem;
+}
+#about-details{
+    width: 40%;
+    height:100%;
+    padding: 4%;
+    margin:auto;
+}
+.textContent {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: justify;  
+    margin-bottom:5rem;
+    line-height: 0.75cm;
+}
+.resume-view-button, .achievement-view-button{
+    background-color:#4ef037 ;
+    border:.2rem solid#4ef037;
+    width:20rem;
+    height:7rem;
+    box-shadow: .1rem .1rem 1rem .1rem #a7ff83;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color:white;
+    padding:.9rem;
+    
+}
+.resume-view-button:hover, .achievement-view-button:hover{
+    background-color:transparent;
+    color:black;
+}
+
+/* style for education */
+#Education{
+    margin-top:0;    
+}
+#education-content,#skills-content,#projects-content{   
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:1rem;
+}
+#Education .strike-line, #Projects .strike-line{
+    width:25rem;
+    border-color: black;
+}
+.education-card .card-heading, #Skills .card-heading{
+    color:white;
+    
+}
+.education-card .card-sub-heading, #projects-content .card-sub-heading{
+    color:#a7ff83;
+}
+.education-card .card-mini-heading{
+    color: white;
+}
+.card{
+    display: inline-block;
+    background-color: #4ef037;
+    border:.2rem solid#4ef037;
+    box-shadow: .1rem .1rem 1rem .1rem #a7ff83;
+    padding:3rem 1rem;
+    border-radius: 1rem;
+    margin:0% 10%;
+}
+#Education .card:hover, #Skills .card:hover, #Skills .card:hover{
+    background-color:transparent;
+    color:white;  
+}
+.education-card{
+    width:27rem;
+    height:27rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    line-height: .09rem;
+    margin:2rem;
+    margin-top:0rem;    
+    padding:1rem;
+}
+.white-badge{
+    display: none;
+}
+.education-card:hover .black-badge{
+    display: none;
+}
+.education-card:hover .white-badge{
+    
+    display: inline;
+}
+.education-card:hover .card-sub-heading{
+    color: #4ef037;
+}
+.education-card:hover .card-heading,.education-card:hover .card-mini-heading,.education-card:hover .grade{
+    color:black;
+}
+.card-heading{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card-sub-heading{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.01em;
+    word-spacing: 0.01cm;
+    line-height: 0.7cm;
+    color:#a7ff83;
+    margin-top:0;
+}
+.card-mini-heading{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+.badge{
+    width:5rem;
+    height:4rem;
+    margin:0rem 7rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    color: white;
+}
+.grade{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color:white;
+}
+
+/* Style for skills */
+.program-pic{
+    width:27rem;
+    height:17rem;
+    margin:2rem;
+}
+#Projects{
+    padding-bottom: 7%;
+}
+
+/* style for projects */
+.project-details{
+    text-align: justify;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 0.75cm;
+    padding:.3rem;
+}
+.flip-card {
+    background-color: transparent;
+    width: 38%;
+    height: 38rem;
+    perspective: 100rem; /* for 3D effect */
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 1rem .1rem #a7ff83;
+    z-index:-1;
+    /* -webkit-backface-visibility: hidden;  */
+    backface-visibility: hidden;
+  }
+    /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+  }
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: white;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: white;
+    color: #4ef037;
+    transform: rotateY(180deg);
+  }
+  #main-project .flip-card-front{
+    background-image:linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ), url("../Images/driving drowsiness logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #mini-project .flip-card-front{
+    background-image:linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ), url("../Images/hospital mgmt project logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+/* style for achievements */
+#Achievements{
+    padding-top: 4rem;
+    padding-bottom: 7%;
+    width: 100%;
+}
+#Projects{
+    padding-top: 4rem;
+}
+#Achievements .strike-line{
+    width:28rem;
+}
+#achievement-title{
+    font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top:6rem;
+}
+#achievement-details{
+  height:40rem;
+    margin:5rem auto;
+    width:45%;
+  font-weight: normal;
+  top:4%;
+  bottom: 0;
+}
+#Achievements .textContent{
+    padding:2rem 1rem;
+}
+.achievement-view-button{
+  margin-top:10rem;
+  margin-left:6rem;
+}
+#achievement-pic{
+    margin:5rem auto;
+    width:40%;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem 2rem .15rem #a7ff83;
+    height:40rem;
+}
+/* style for footer */
+#contact-links{
+    text-align: center;
+    margin:3rem ;
+    margin-bottom:7rem;
+}
+#contact-links a{
+    margin:3rem;
+    
+}
+.footer-text{
+    font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+.link-to-contact{
+    width:4.5rem;
+    height:4.5rem;
+    border-radius: .5rem;
+}
+footer{
+    padding-bottom:4rem;
+    padding-top:4rem;
+    bottom:0rem;
+    height:20rem;
+  width:100%;
+    line-height: 0.5rem;
+  background-color: black;
+}
+footer .sub-heading{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+#my-copyright{
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+#go-to-top,#menu-icon{
+    float: right;
+    width:6rem;
+    height:5rem;
+    bottom: 5rem;
+    right:5rem;
+    border-radius: .5rem;
+    position: fixed;
+}
+#go-to-top{
+    display: none;
+}  
+
+
+/* media queries */
+@media(max-width:1300px){
+    #Education{
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    #education-content{
+        padding:5rem;
+    }
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    .flip-card{
+        width:50%;
+        margin:2rem;
+        margin-bottom: 5rem;
+    }
+}
+@media(max-width:760px){
+    html{
+        font-size: 45%;
+    }
+    #aboutPic{
+        width:90%;
+        height:40%;
+    }
+    #about-details{
+        width:90%;
+        
+    }
+    #Education{
+        margin-top:17%;    
+        height:90%;
+    }
+    #Skills{
+        margin-top: 5%;
+    }
+    #About{
+        width:100%;
+        height:100%;
+        margin-bottom: 1%;
+    }
+    .flip-card{
+        width:70%;        
+    }
+    #achievement-details{
+        height:40rem;
+          margin:1rem auto;
+          width:90%;
+        font-weight: normal;
+        top:4%;
+        bottom: 0;
+      }
+      #achievement-pic{
+        margin:1rem auto;
+        margin-top:3rem;
+        width:90%;
+        height:60rem;
+    }
+}
+
+@media(max-width:610px){
+    .flip-card{
+        width:75%;  
+        height: 40rem;   
+    }
+    #Skills{
+        margin-top: 10%;
+    }
+    #Projects{
+        margin-top: 40%;
+    }
+}
+@media(max-width:509px){
+    #Skills{
+        margin-top: 100%;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 55%;
+      height: 100%;
+      background-color: #4ef037;
+      border: .2rem solid #4ef037;
+      box-shadow: .1rem .1rem .5rem .1rem #4ef037;
+      top: 8rem;
+      right:-100%;
+      text-align: center;
+      padding:0;
+    }
+    nav li a{
+        color:white;
+    }
+    nav ul li{
+      display: block;
+      margin: 8.5% 0;
+      border-bottom: .1rem solid white;
+    }
+    #check:checked ~ ul{
+        right:0;
+    }
+}
